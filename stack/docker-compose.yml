@@ -1,13 +1,13 @@
 networks:
-  servicediscovery:
-    driver: overlay
-    attachable: true
+  dockerswarm_sd_network:
+    name: dockerswarm_sd_network
+    external: true
 
 services:
   dockerswarm_sd_server:
     image: socheatsok78/dockerswarm_sd_server:latest
     networks:
-      - servicediscovery
+      - dockerswarm_sd_network
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     deploy:
