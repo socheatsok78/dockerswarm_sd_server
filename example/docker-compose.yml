@@ -1,0 +1,7 @@
+services:
+  api-server:
+    image: localhost/dockerengine-server:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 9993:9093
