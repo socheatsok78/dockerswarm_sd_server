@@ -1,7 +1,17 @@
+networks:
+  servicediscovery:
+    driver: overlay
+    attachable: true
+
 services:
-  api-server:
-    image: localhost/dockerengine-server:latest
+  dockerswarm_sd_server:
+    image: socheatsok78/dockerswarm_sd_server:latest
+    networks:
+      - servicediscovery
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    ports:
-      - 9993:9093
+    deploy:
+      placement:
+        max_replicas_per_node: 1
+        constraints:
+          - node.role == manager
