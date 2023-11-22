@@ -51,7 +51,7 @@ docker service create \
     socheatsok78/dockerswarm_sd_server:main
 ```
 
-## Remove the `dockerswarm_sd_server` service from Docker Swarm
+### Remove the `dockerswarm_sd_server` service from Docker Swarm
 
 > [!WARNING]
 > Before removing the `dockerswarm_sd_server` service, make sure you have removed all the services that are using the `dockerswarm_sd_server` service.
@@ -59,3 +59,21 @@ docker service create \
 ```bash
 docker service rm dockerswarm_sd_server
 ```
+
+## Configure Prometheus/Promtail
+
+To configure Prometheus/Promtail to scrape the `dockerswarm_sd_server` service, you need to use `dockerswarm_sd_server` as the `host` value in the `dockerswarm_sd_configs` scrape_configs.
+
+```yaml
+- job_name: dockerswarm
+    dockerswarm_sd_configs:
+      - host: http://dockerswarm_sd_server:9093
+        refresh_interval: 5s
+        role: tasks
+```
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+
+See [LICENSE](LICENSE) for more information.
