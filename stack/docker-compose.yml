@@ -4,7 +4,7 @@ networks:
     external: true
 
 services:
-  dockerswarm_sd_server:
+  server:
     image: socheatsok78/dockerswarm_sd_server:latest
     networks:
       - dockerswarm_sd_network
