@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  DOCKER_IMAGE_NAME: socheatsok78/dockerswarm-sd-server
+  DOCKER_IMAGE_NAME: socheatsok78/dockerswarm_sd_server
 
 jobs:
   build:
