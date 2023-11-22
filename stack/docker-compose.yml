@@ -6,6 +6,7 @@ networks:
 services:
   server:
     image: socheatsok78/dockerswarm_sd_server:latest
+    hostname: dockerswarm_sd_server
     networks:
       - dockerswarm_sd_network
     volumes:
