@@ -1,4 +1,4 @@
-# dockerswarm_sd_server
+# About
 A simple server provide proxying to Docker Engine API for using with Prometheus/Promtail ("dockerswarm_sd_configs" scrape_configs)
 
 ## Overview
