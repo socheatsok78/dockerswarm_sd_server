@@ -5,7 +5,7 @@ networks:
 
 services:
   dockerswarm_sd_server:
-    image: socheatsok78/dockerswarm_sd_server:main
+    image: socheatsok78/dockerswarm_sd_server:latest
     networks:
       - dockerswarm_sd_network
     volumes:

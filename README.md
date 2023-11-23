@@ -49,7 +49,7 @@ docker service create \
         --update-failure-action rollback \
         --update-order stop-first \
         --with-registry-auth \
-    socheatsok78/dockerswarm_sd_server:main
+    socheatsok78/dockerswarm_sd_server:latest
 ```
 
 ### Remove the `dockerswarm_sd_server` service from Docker Swarm
