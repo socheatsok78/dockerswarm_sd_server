@@ -68,7 +68,6 @@ To configure Prometheus/Promtail to scrape the `dockerswarm_sd_server` service, 
 - job_name: dockerswarm
     dockerswarm_sd_configs:
       - host: http://dockerswarm_sd_server:9093
-        refresh_interval: 5s
 ```
 
 ## License
