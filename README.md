@@ -3,7 +3,11 @@ A simple server provide proxying to Docker Engine API for using with **Prometheu
 
 ## Overview
 
-![diagram](https://github.com/socheatsok78/dockerswarm_sd_server/assets/4363857/babd8ddc-d2d6-45b1-8995-401ec3b7319d)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/socheatsok78/dockerswarm_sd_server/assets/4363857/babd8ddc-d2d6-45b1-8995-401ec3b7319d">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/socheatsok78/dockerswarm_sd_server/assets/4363857/a59d6061-48da-40d5-8ed0-669ba9794e9c">
+  <img alt="Overview" src="https://github.com/socheatsok78/dockerswarm_sd_server/assets/4363857/a59d6061-48da-40d5-8ed0-669ba9794e9c">
+</picture>
 
 ## Endpoints
 
